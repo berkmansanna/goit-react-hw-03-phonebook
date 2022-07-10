@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
 import styles from './ContactForm.module.css';
 
 export class ContactForm extends Component {
@@ -65,3 +67,8 @@ export class ContactForm extends Component {
     );
   }
 }
+
+ContactForm.propTypes = {
+  name: PropTypes.string,
+  number: PropTypes.string,
+};
